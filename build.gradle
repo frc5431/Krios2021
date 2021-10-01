@@ -11,6 +11,7 @@ def ROBOT_MAIN_CLASS = "frc.robot.Main"
 allprojects {
     repositories {
         mavenCentral()
+	mavenLocal()
         maven { url 'https://jitpack.io' }
     }
 }
@@ -66,7 +67,7 @@ dependencies {
     simulation wpi.deps.sim.gui(wpi.platforms.desktop, false)
     simulation wpi.deps.sim.driverstation(wpi.platforms.desktop, false)
 
-    implementation 'com.github.frc5431:TitanUtil:2021.3.1.0'
+    implementation 'com.github.frc5431:TitanUtil:2022.1.1'
 
     // Websocket extensions require additional configuration.
     // simulation wpi.deps.sim.ws_server(wpi.platforms.desktop, false)

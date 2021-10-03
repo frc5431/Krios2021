@@ -11,6 +11,7 @@ def ROBOT_MAIN_CLASS = "frc.robot.Main"
 allprojects {
     repositories {
         mavenCentral()
+        mavenLocal()
         maven { url 'https://jitpack.io' }
     }
 }
